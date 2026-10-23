@@ -1,0 +1,72 @@
+<?php
+declare(strict_types=1);
+
+// NzConveyancingFeeIndex SDK utility registration
+
+require_once __DIR__ . '/../core/UtilityType.php';
+require_once __DIR__ . '/Clean.php';
+require_once __DIR__ . '/Done.php';
+require_once __DIR__ . '/MakeError.php';
+require_once __DIR__ . '/FeatureAdd.php';
+require_once __DIR__ . '/FeatureHook.php';
+require_once __DIR__ . '/FeatureInit.php';
+require_once __DIR__ . '/Fetcher.php';
+require_once __DIR__ . '/MakeFetchDef.php';
+require_once __DIR__ . '/MakeContext.php';
+require_once __DIR__ . '/MakeOptions.php';
+require_once __DIR__ . '/MakeRequest.php';
+require_once __DIR__ . '/MakeResponse.php';
+require_once __DIR__ . '/MakeResult.php';
+require_once __DIR__ . '/MakePoint.php';
+require_once __DIR__ . '/MakeSpec.php';
+require_once __DIR__ . '/MakeUrl.php';
+require_once __DIR__ . '/Param.php';
+require_once __DIR__ . '/PrepareAuth.php';
+require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
+require_once __DIR__ . '/PrepareHeaders.php';
+require_once __DIR__ . '/PrepareMethod.php';
+require_once __DIR__ . '/PrepareParams.php';
+require_once __DIR__ . '/PreparePath.php';
+require_once __DIR__ . '/PrepareQuery.php';
+require_once __DIR__ . '/ResultBasic.php';
+require_once __DIR__ . '/ResultBody.php';
+require_once __DIR__ . '/ResultHeaders.php';
+require_once __DIR__ . '/TransformRequest.php';
+require_once __DIR__ . '/TransformResponse.php';
+
+NzConveyancingFeeIndexUtility::setRegistrar(function (NzConveyancingFeeIndexUtility $u): void {
+    $u->clean = [NzConveyancingFeeIndexClean::class, 'call'];
+    $u->clean_add = [NzConveyancingFeeIndexClean::class, 'add'];
+    $u->clean_explain = [NzConveyancingFeeIndexDone::class, 'clean_explain'];
+    $u->done = [NzConveyancingFeeIndexDone::class, 'call'];
+    $u->make_error = [NzConveyancingFeeIndexMakeError::class, 'call'];
+    $u->feature_add = [NzConveyancingFeeIndexFeatureAdd::class, 'call'];
+    $u->feature_hook = [NzConveyancingFeeIndexFeatureHook::class, 'call'];
+    $u->feature_init = [NzConveyancingFeeIndexFeatureInit::class, 'call'];
+    $u->fetcher = [NzConveyancingFeeIndexFetcher::class, 'call'];
+    $u->make_fetch_def = [NzConveyancingFeeIndexMakeFetchDef::class, 'call'];
+    $u->make_context = [NzConveyancingFeeIndexMakeContext::class, 'call'];
+    $u->make_options = [NzConveyancingFeeIndexMakeOptions::class, 'call'];
+    $u->make_request = [NzConveyancingFeeIndexMakeRequest::class, 'call'];
+    $u->make_response = [NzConveyancingFeeIndexMakeResponse::class, 'call'];
+    $u->make_result = [NzConveyancingFeeIndexMakeResult::class, 'call'];
+    $u->make_point = [NzConveyancingFeeIndexMakePoint::class, 'call'];
+    $u->make_spec = [NzConveyancingFeeIndexMakeSpec::class, 'call'];
+    $u->make_url = [NzConveyancingFeeIndexMakeUrl::class, 'call'];
+    $u->param = [NzConveyancingFeeIndexParam::class, 'call'];
+    $u->prepare_auth = [NzConveyancingFeeIndexPrepareAuth::class, 'call'];
+    $u->prepare_body = [NzConveyancingFeeIndexPrepareBody::class, 'call'];
+    $u->prepare_headers = [NzConveyancingFeeIndexPrepareHeaders::class, 'call'];
+    $u->prepare_method = [NzConveyancingFeeIndexPrepareMethod::class, 'call'];
+    $u->prepare_params = [NzConveyancingFeeIndexPrepareParams::class, 'call'];
+    $u->prepare_path = [NzConveyancingFeeIndexPreparePath::class, 'call'];
+    $u->prepare_query = [NzConveyancingFeeIndexPrepareQuery::class, 'call'];
+    $u->graphql_body = [NzConveyancingFeeIndexGraphql::class, 'body'];
+    $u->graphql_errors = [NzConveyancingFeeIndexGraphql::class, 'errors'];
+    $u->result_basic = [NzConveyancingFeeIndexResultBasic::class, 'call'];
+    $u->result_body = [NzConveyancingFeeIndexResultBody::class, 'call'];
+    $u->result_headers = [NzConveyancingFeeIndexResultHeaders::class, 'call'];
+    $u->transform_request = [NzConveyancingFeeIndexTransformRequest::class, 'call'];
+    $u->transform_response = [NzConveyancingFeeIndexTransformResponse::class, 'call'];
+});

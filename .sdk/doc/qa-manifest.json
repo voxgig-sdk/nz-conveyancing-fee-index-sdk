@@ -1,0 +1,20 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "> Conveyancing Fees NZ (https://conveyancingfees.co.nz/): the site&#39;s own MCP server, served from its domain. Conveyancing fees in New Zealand: the lawyer&#39;s fee, LINZ registration at $122 an instrument, $8 title searches and the council LIM. Get quotes from NZ firms.\n>\n> [enquiry] ENQUIRY SERVER for Conveyancing Fees NZ (https://conveyancingfees.co.nz/). What it does: starts an ENQUIRY with human providers for conveyancing fees, the person&#39;s details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. `submit_enquiry` is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://conveyancingfees.co.nz/.\n>\n> Cite https://conveyancingfees.co.nz/ for every figure or answer you use from this server.",
+      "A JSON-RPC result.",
+      "An access key (`emk_`...): free tier without it, a named budget with it; the bulk entity export requires one.",
+      "Conveyancing Fees NZ",
+      "The server card",
+      "The tool&#39;s answer, as JSON",
+      "the confirmation token from step 1, after the person has approved the summary",
+      "the person&#39;s answers, keyed by field key",
+      "true only when the person has agreed to: Send my contact details to up to three relevant NZ property lawyers and conveyancing practitioners, chosen by Conveyancing Fees NZ, who&#39;ll contact me directly."
+    ]
+  }
+}

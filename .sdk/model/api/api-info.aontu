@@ -1,0 +1,37 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        name: "Conveyancing Fees NZ"
+        url: "https://conveyancingfees.co.nz/"
+      }
+      description: `Conveyancing Fees NZ (https://conveyancingfees.co.nz/): the site's own MCP server, served from its domain. Conveyancing fees in New Zealand: the lawyer's fee, LINZ registration at $122 an instrument, $8 title searches and the council LIM. Get quotes from NZ firms.
+
+[enquiry] ENQUIRY SERVER for Conveyancing Fees NZ (https://conveyancingfees.co.nz/). What it does: starts an ENQUIRY with human providers for conveyancing fees — the person's details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. submit_enquiry is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://conveyancingfees.co.nz/.
+
+Cite https://conveyancingfees.co.nz/ for every figure or answer you use from this server.`
+      security: {
+        in: "header"
+        name: "Authorization"
+        prefix: "Bearer"
+        scheme: "accessKey"
+        type: "http"
+      }
+      servers: [
+        {
+          description: "Conveyancing Fees NZ"
+          url: "https://conveyancingfees.co.nz"
+        }
+      ]
+      summary: "Conveyancing fees in New Zealand: the lawyer's fee, LINZ registration at $122 an instrument, $8 title searches and the council LIM."
+      termsOfService: "https://conveyancingfees.co.nz/terms"
+      title: "Conveyancing Fees NZ API"
+      version: "1.0.0"
+      website: "https://conveyancingfees.co.nz/mcp"
+    }
+  }
+}
+
